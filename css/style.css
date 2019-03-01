@@ -83,7 +83,7 @@ header .searchBar .searchEnginLogo li.active{
     top: 7px;
     width: 30px;
     height: 30px;
-    background: url(../image/search-btn.png) center center no-repeat;
+    background: url(../images/search-btn.png) center center no-repeat;
     cursor: pointer;
     border: none;
     outline: none;
