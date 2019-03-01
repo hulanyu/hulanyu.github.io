@@ -44,7 +44,7 @@ function init(){
         z : 'zhihu.com',
         x : 'xiedaimala.com',
         c : 'csdn.net',
-        v : undefined,
+        v : 'cn.vuejs.org',
         b : 'bilibili.com',
         n : undefined,
         m : 'mail.163.com'
