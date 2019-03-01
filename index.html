@@ -3,15 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>hulanyu.github.io</title>
+    <title>快速查找</title>
     <link rel="icon" href="/images/timg.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="/images/timg.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
   	<!-- 这里挂在应用 -->
-    <div id="app">
-    	hello word
-    </div>
-    <!-- built files will be auto injected -->
+    <header>
+      <ul id="searchEnginPic" class="searchEnginPic">
+        <li class="active">
+          <a href="https://www.google.com.hk/" target="_blank"><img src="/images/google.png" alt="google"></a>
+        </li>
+        <li>
+          <a href="https://www.baidu.com/" target="_blank"><img src="/images/baidu.gif" alt="百度一下"></a>
+        </li>
+      </ul>
+      <form action="" id="searchBar" class="searchBar">
+        <ul id="searchEnginLogo" class="searchEnginLogo">
+          <li class="active">
+            <img src="/images/google.svg" alt="google">
+          </li>
+          <li>
+            <img src="/images/baidu.svg" alt="baidu">
+          </li>
+        </ul>
+        <input type="text" id="inputBar">
+        <button id="searchBtn" class="searchBtn"></button>
+      </form>
+    </header>
+    <main>
+      <div id="main" class="wrapper"></div>
+    </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>
