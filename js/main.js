@@ -165,10 +165,10 @@ function createImage(domain) { //hash[row[index2]]
     if (domain) {
         img.src = 'http://' + domain + '/favicon.ico';
     } else {
-        img.src = './images/search.png';
+        img.src = './images/search-btn.png';
     }
     img.onerror = function (e) {
-        e.target.src = './images/search.png';
+        e.target.src = './images/search-btn.png';
     }
     return img;
 }
