@@ -8,8 +8,8 @@ ul{list-style: none;}
 
 /* 注意：这里图片路径是相对路径 */
 body{
-    background: #ccc url(../image/bg.jpg) no-repeat center center;
-    background-size: cover;
+    background: #060e1b;
+    overflow: hidden;
 }
 
 /* header */
