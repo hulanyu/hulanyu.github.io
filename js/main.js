@@ -155,9 +155,6 @@ function createButton(id) {
         //将原来的hash给替换掉
         hash[key] = web;
         img2.src = 'http://' + web + '/favicon.ico';
-        img2.onerror = function (e) {
-            e.target.src = './image/dot.png';
-        }
         localStorage.setItem('data', JSON.stringify(hash));
     }
     return button;

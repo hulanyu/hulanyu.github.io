@@ -11,36 +11,17 @@ body{
     background: #060e1b;
     overflow: hidden;
 }
-
+#canvas{
+  position: absolute;
+}
 /* header */
 header{
     width: 720px;
     height: 44px;
     margin: 100px auto 50px;
 }
-header .searchEnginPic{
-    float: left;
-    width: 120px;
-    height: 44px;
-}
-header .searchEnginPic li{
-    display: none;
-}
-header .searchEnginPic li.active{
-    display: inline-block;
-}
-header .searchEnginPic li:nth-child(1) img{
-    width: 120px; 
-    padding: 2.5px 0;
-}
-header .searchEnginPic li:nth-child(2) img{
-    width: 120px; 
-    height: 44px;
-}
-
 header .searchBar{
-    float: right;
-    width: 580px;
+    width:100%;
     height: 44px;
     border-radius: 24px;
     position: relative;
