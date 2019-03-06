@@ -165,10 +165,10 @@ function createImage(domain) { //hash[row[index2]]
     if (domain) {
         img.src = 'http://' + domain + '/favicon.ico';
     } else {
-        img.src = './image/dot.png';
+        img.src = './images/search.png';
     }
     img.onerror = function (e) {
-        e.target.src = './image/dot.png';
+        e.target.src = './images/search.png';
     }
     return img;
 }
@@ -210,7 +210,6 @@ function listenToUser(hash) {
             if (website === undefined) {
                 alert('请编辑此按键的网站再跳转')
             } else {
-                console.log(1);
                 window.open('http://' + website, "_blank");
             }
         }
