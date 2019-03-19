@@ -3,32 +3,76 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>快速查找</title>
-    <link rel="icon" href="/images/timg.jpg" type="image/x-icon">
-    <link rel="shortcut icon" href="/images/timg.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="./css/normalize.css">
+    <title>胡澜于个人主页</title>
+    <link rel="stylesheet" href="./static/carousel/broadcast-me.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper.css">
   </head>
   <body>
   	<!-- 这里挂在应用 -->
-    <canvas id="canvas"></canvas>
-    <header>
-      <form action="" id="searchBar" class="searchBar">
-        <ul id="searchEnginLogo" class="searchEnginLogo">
+    <div class="container">
+      <div class="top">
+        <p>胡澜于个人主页</p>
+        <span class="line"></span>
+        <span class="number">01</span>
+      </div>
+      <div class="center">
+        <ul class="nav">
           <li class="active">
-            <img src="/images/google.svg" alt="google">
+            <span class="line"></span>
+            <a href="#">网站首页</a>
           </li>
           <li>
-            <img src="/images/baidu.svg" alt="baidu">
+            <span class="line"></span>
+            <a href="#">关于我</a>
+          </li>
+          <li>
+            <span class="line"></span>
+            <a href="#">时间轴</a>
+          </li>
+          <li>
+            <span class="line"></span>
+            <a href="#">设计心得</a>
+          </li>
+          <li>
+            <span class="line"></span>
+            <a href="#">留言</a>
           </li>
         </ul>
-        <input type="text" id="inputBar">
-        <button id="searchBtn" class="searchBtn"></button>
-      </form>
-    </header>
-    <main>
-      <div id="main" class="wrapper"></div>
-    </main>
-    <script src="./js/main.js"></script>
+        <!-- 轮播图 -->
+        <div class="BannerBox">
+          <div class="swiper-container banner">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url('images/banner_1.jpeg')"></div>
+              <div class="swiper-slide" style="background-image: url('images/banner_2.jpeg')"></div>
+              <div class="swiper-slide" style="background-image: url('images/banner_3.jpeg')"></div>
+              <div class="swiper-slide" style="background-image: url('images/banner_4.jpeg')"></div>
+            </div>
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+          </div>
+        </div>
+        <div class="right"><p>D<br>I<br>S<br>C<br>O<br>V<br>E<br>R</p></div> 
+      </div>
+      
+      <div class="content">
+        <p>我们不是真的想回到18岁<br>而是怀念梦想与热情<br>我们不是真的担心老去<br>而是担心老去了<br>却没有活成自己想要的样子<br>成长是从偶然变必然<br>成长是从舒适到自适<br>成长是从小我到大我<br>所以<br>保持这种学习的能力吧<br>她会让我们永远保持年轻</p>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/swiper.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/base.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("li").each(function (index) {
+          $(this).click(function () {
+            $("li").removeClass('active');
+            $("li").eq(index).addClass('active')
+          })
+        })
+      })
+    </script>
   </body>
 </html>
+

@@ -1,0 +1,107 @@
+.broadcastMe {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.broadcastMe .broadcastMe-list {
+  position: relative;
+}
+
+.broadcastMe .broadcastMe-list .broadcastMe-item {
+  float: left;
+}
+
+.broadcastMe .broadcastMe-list .broadcastMe-item img {
+  width: 100%;
+}
+
+.broadcastMe .broadcastMe-tool {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.5rem;
+  display: none;
+}
+
+.broadcastMe .broadcastMe-tool .broadcastMe-spot {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background: #ccc;
+  display: inline-block;
+  margin: 0 20px;
+  opacity: 0.6; 
+  transition: background .6s;
+}
+
+.broadcastMe .broadcastMe-tool .broadcastMe-spot:hover {
+  background: #ff6700;
+  cursor: pointer;
+}
+
+.broadcastMe .broadcastMe-tool .broadcastMe-spot-active {
+  background: #ff6700;
+}
+
+.mall-index-warp .broadcastMe .broadcastMe-tool {
+  padding-bottom: 25px;
+}
+
+.mall-index-warp .broadcastMe .broadcastMe-tool .broadcastMe-spot {
+  width: 14px;
+  height: 2px;
+  opacity: 0.4;
+  border-radius: 1px;
+  background-color: #000000;
+  margin: 0 7px;
+}
+
+.broadcastMe .broadcastMe-tool .broadcastMe-spot:hover {
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.broadcastMe .broadcastMe-tool .broadcastMe-spot-active {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.broadcastMe .broadcastMe-btn {
+  width: 3rem;
+  height: 6rem;
+  background: transparent;
+  opacity: .6;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  line-height: 6rem;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  margin-top: -3rem;
+  transition: background .6s;
+}
+
+.broadcastMe .broadcastMe-btn:hover {
+  background: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.broadcastMe .broadcastMe-btn-left {
+  left: -1px;
+}
+
+.broadcastMe .broadcastMe-btn-right {
+  right: -1px;
+}
+
+/* 响应式：width <= 768px */
+@media screen and (max-width:768px) {
+  .broadcastMe .broadcastMe-btn {
+    display: none;
+  }
+}
