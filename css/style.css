@@ -14,7 +14,7 @@ body{
 .container{
   margin: 0 auto;
   width: 1200px;
-  overflow: hidden;
+  position: relative;
 }
 .container .top{
   margin-top: 130px;
@@ -129,4 +129,15 @@ body{
   font-family:SourceHanSansSC-Regular;
   font-weight:400;
   color:rgba(169,163,158,1);
+}
+.container .about-us{
+  width: 800px;
+  height: 600px;
+  float: left;
+  background-color: #ffffff;
+}
+.img{
+  position: absolute;
+  top:548px;
+  right: 110px;
 }
