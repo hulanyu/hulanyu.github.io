@@ -141,3 +141,48 @@ body{
   top:548px;
   right: 110px;
 }
+.footer{
+  height: 100%;
+}
+.footer .right-warp{
+  width: 60px;
+  height: 68px;
+  float: right;
+  text-align: center;
+  position: relative;
+}
+.tips{
+  display: none;
+  width: 140px;
+  height: 140px;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.15);
+  background-color: white;
+  position: absolute;
+  top: -150px;
+  left: -38px;
+}
+.footer .right-warp:hover .tips{
+  display: block; 
+}
+.tips .webchat{
+  width: 140px;
+  height: 140px;
+  background:url(../images/Wechat.jpeg) center center no-repeat;
+  background-size: contain;
+}
+.logo{
+  width: 36px;
+  height: 36px;
+  margin: 0 12px;
+  object-fit: contain;
+  background:url(../images/default.svg) center center no-repeat;
+}
+.logo:hover{
+  background:url(../images/hover.svg) center center no-repeat; 
+}
+.item{
+  margin-top: 6px;
+  font-size: 12px;
+  line-height: 1.67;
+  color: #8c8e8f;
+}
