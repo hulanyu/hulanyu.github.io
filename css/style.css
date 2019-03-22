@@ -134,7 +134,14 @@ body{
   width: 800px;
   height: 600px;
   float: left;
+  padding: 41px 54px 41px 110px;
   background-color: #ffffff;
+}
+.about-us p{
+  font-size: 14px;
+  line-height: 2;
+  font-weight: 400;
+  color:rgba(51,51,51,1);
 }
 .img{
   position: absolute;
